@@ -62,7 +62,7 @@ export function ReadAll() {
   }, [name, offset]);
   // useEffect
 
-  if (!listaResultadoApi) {
+  while (!listaResultadoApi) {
     return <div>Carregando...</div>;
   }
 
