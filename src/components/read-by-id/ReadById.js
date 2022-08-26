@@ -21,7 +21,7 @@ export function ReadById(props) {
         const resultado = await Api.buildApiGetRequest(Api.readCharacterByIdUrl(id));
 
         const dados = await resultado.json();
-        // console.log(dados);
+
         setItem(dados[0]);
     };
 

@@ -28,7 +28,7 @@ export function Create(props) {
     );
 
     const jsonResultado = await resultado.json();
-    console.log(jsonResultado);
+
     navigate(`/viewOne/${jsonResultado.character._id}`);
   };
 

@@ -15,7 +15,6 @@ export function ReadAll() {
   const { name } = useParams();
 
   const getResult = async () => {
-    console.log(offset);
     const resultado = await Api.buildApiGetRequest(
       Api.readAllCharactersUrl(offset)
     );

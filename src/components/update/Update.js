@@ -29,7 +29,6 @@ export function Update(props) {
         const dados = await resultado.json();
 
         setItem(dados[0]);
-        // console.log(dados[0]);
         setPreviewImage({
             ...previewImage,
             image:dados[0].imageUrl

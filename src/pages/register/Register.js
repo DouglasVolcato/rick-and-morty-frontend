@@ -22,7 +22,6 @@ export default function Register() {
     }
     const response = await Api.buildApiPostRequest(Api.createUserUrl(),preload);
     const result = await response.json();
-    console.log(result);
   }
   
   return (
