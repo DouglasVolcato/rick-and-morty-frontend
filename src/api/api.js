@@ -4,7 +4,7 @@ export const Api = {
 
 	// characters
 	createCharacterUrl: () => Api.baseUrl + "/characters/create",
-	readAllCharactersUrl: (offset) => Api.baseUrl + "/characters?limit=9&offset="+offset,
+	readAllCharactersUrl: (offset) => Api.baseUrl + "/characters?limit=8&offset="+offset,
 	readCharacterByIdUrl: (id) => Api.baseUrl + "/characters/find/" + id,
 	readCharacterByNameUrl:(name)=>Api.baseUrl + "/characters/search?name="+name,
 	updateCharacterUrl: (id) => Api.baseUrl + "/characters/update/" + id,

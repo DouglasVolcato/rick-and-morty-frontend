@@ -30,13 +30,13 @@ export function ReadAll() {
 
   const setNext = () => {
     if (offset < listaResultadoApi.total) {
-      setOffset(offset + 9);
+      setOffset(offset + 8);
     }
   };
 
   const setPrev = () => {
-    if (offset - 9 >= 1) {
-      setOffset(offset - 9);
+    if (offset - 8 >= 1) {
+      setOffset(offset - 8);
     }
   };
 
