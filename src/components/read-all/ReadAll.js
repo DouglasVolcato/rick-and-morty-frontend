@@ -35,7 +35,9 @@ export function ReadAll() {
   };
 
   const setPrev = () => {
-    if (offset - 8 >= 1) {
+    console.log("offset: " + offset)
+    console.log("listaResultadoApi: " + listaResultadoApi.total)
+    if (offset - 8 >= 0) {
       setOffset(offset - 8);
     }
   };
