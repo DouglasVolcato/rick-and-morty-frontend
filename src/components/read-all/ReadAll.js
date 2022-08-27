@@ -10,7 +10,7 @@ import "./ReadAll.css";
 export function ReadAll() {
   // useState
   const [listaResultadoApi, atualizarListaResultadoApi] = useState();
-  const [offset, setOffset] = useState(1);
+  const [offset, setOffset] = useState(0);
 
   const { name } = useParams();
 
@@ -29,7 +29,7 @@ export function ReadAll() {
   };
 
   const setNext = () => {
-    if (offset < listaResultadoApi.total) {
+    if (listaResultadoApi.total === 8) {
       setOffset(offset + 8);
     }
   };
